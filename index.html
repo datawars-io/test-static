@@ -12,8 +12,11 @@
     ></iframe>
 
     <script>
-      const iframeElem = document.getElementById("lab-iframe");
-      console.log(iframeElem);
+      window.onload = (event) => {
+        const iframeElem = document.getElementById("lab-iframe");
+        console.log("IFRAME", iframeElem);
+        console.log("CONTENT WINDOW", iframeElem?.contentWindow);
+      };
     </script>
   </body>
 </html>
